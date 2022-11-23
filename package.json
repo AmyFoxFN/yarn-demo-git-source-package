@@ -4,7 +4,12 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "clean": "echo",
+    "build-esm": "yarn build-esm",
+    "build-watch": "yarn build-watch",
+    "copy-other-files": "rsync -avu --exclude={'*.ts','*.tsx','*.json'} './src/' './lib'",
+    "build": "yarn clean && npm run copy-other-files && yarn build-esm",
+    "test": "jest"
   },
   "devDependencies": {
     "local-workspace": "workspace:*"
