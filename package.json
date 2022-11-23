@@ -3,10 +3,8 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
-  "module": "lib/index.js",
-  "types": "lib/index.d.ts",
   "devDependencies": {
-    "private-package": "^1.0.0"
+    "local-workspace": "workspace:*"
   },
   "author": "",
   "license": "ISC",
