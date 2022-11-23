@@ -6,8 +6,7 @@
   "module": "lib/index.js",
   "types": "lib/index.d.ts",
   "devDependencies": {
-    "local-workspace": "workspace:*",
-    "package-from-private-registry": "^1.0.0"
+    "private-package": "^1.0.0"
   },
   "author": "",
   "license": "ISC",
