@@ -1,5 +1,5 @@
 {
-  "name": "yarn-demo-git-source-package",
+  "name": "git-source-package",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",

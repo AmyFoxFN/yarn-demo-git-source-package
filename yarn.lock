@@ -4,16 +4,16 @@
 __metadata:
   version: 6
 
-"local-workspace@workspace:*, local-workspace@workspace:local-workspace":
+"git-source-package@workspace:.":
   version: 0.0.0-use.local
-  resolution: "local-workspace@workspace:local-workspace"
+  resolution: "git-source-package@workspace:."
+  dependencies:
+    local-workspace: "workspace:*"
   languageName: unknown
   linkType: soft
 
-"yarn-demo-git-source-package@workspace:.":
+"local-workspace@workspace:*, local-workspace@workspace:local-workspace":
   version: 0.0.0-use.local
-  resolution: "yarn-demo-git-source-package@workspace:."
-  dependencies:
-    local-workspace: "workspace:*"
+  resolution: "local-workspace@workspace:local-workspace"
   languageName: unknown
   linkType: soft
