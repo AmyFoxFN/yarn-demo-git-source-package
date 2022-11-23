@@ -5,20 +5,9 @@
   "main": "index.js",
   "module": "lib/index.js",
   "types": "lib/index.d.ts",
-  "scripts": {
-    "clean": "echo",
-    "build-esm": "yarn build-esm",
-    "build-watch": "yarn build-watch",
-    "copy-other-files": "rsync -avu --exclude={'*.ts','*.tsx','*.json'} './src/' './lib'",
-    "build": "yarn clean && npm run copy-other-files && yarn build-esm",
-    "test": "jest"
-  },
-  "peerDependencies": {
-    "local-workspace": "^1.0.0",
-    "lodash": "^4.17.21"
-  },
   "devDependencies": {
-    "local-workspace": "workspace:*"
+    "local-workspace": "workspace:*",
+    "package-from-private-registry": "^1.0.0"
   },
   "author": "",
   "license": "ISC",
